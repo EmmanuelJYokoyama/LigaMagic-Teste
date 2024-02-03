@@ -1,0 +1,18 @@
+@import url(./card-display.css);
+
+.container-content{
+    margin-top: 16ch;
+    max-width: 850px;
+    margin-left: 90ch ;
+    padding: 32px, 95px, 40px, 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.container-content span{
+    height: 300px; 
+    border-left: 1px solid black; 
+ 
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+/* ---------------------GERAL------------------ */
+body{
+    text-align: center;
+    padding: 0;
+    background: whitesmoke;
+    font-family: 'Open sans', sans-serif;
+}
+
+:root{
+    --color-header: #04050C;
+    --color-bottom-text: #727270;
+
+}
+i, img{
+    cursor: pointer;
+}
+
+
+
+h1{
+    text-align: center;
+    color: var(--color-header);
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+/* ---------------MAIN PAGE------------- */
+
+
+
+/* ---------------CARD DISPLAY------------- */
+
+.container-display{
+    margin-top: 16ch;
+    max-width: 640px;
+    margin-left: 150px;
+    padding: 32px, 40px, 51px, 80px;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.container-display hr{
+    width: 328px;
+}
+
+.container-display p{
+    display: flex;
+    justify-content: center;    
+    position: relative;
+    
+}
+
+
+#card-selector{
+    display: flex;
+    align-items: center;
+    img{
+        width: 15%;
+        height: 15%;
+        gap: 10px;
+    }
+    p{
+        gap: 16px
+    }
+}
+
+#card-index{
+    margin-left: 0px;
+    margin: 0
+    
+}
+
+#card-selector img{
+    filter: grayscale(100%);
+    background: rgba(0,0,0,0.6);
+    opacity: 0.7;
+    transition: 0.6s;
+}
+
+#card-selector img{
+    border:solid 1px yellow; margin:10px;
+}
+.selected{
+    box-shadow:0px 12px 22px 1px #333;
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+#card-selector img:hover{
+    box-shadow:0px 12px 22px 1px #333;
+    filter: grayscale(0%);
+    opacity: 1;
+    zoom: 1.2;
+
+}
+
+
