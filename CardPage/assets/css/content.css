@@ -1,18 +1,48 @@
 @import url(./card-display.css);
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 .container-content{
-    margin-top: 16ch;
-    max-width: 850px;
-    margin-left: 90ch ;
+    margin-top: 15ch;
+    max-width: 850vh;
+    margin-right: 90ch ;
     padding: 32px, 95px, 40px, 64px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /* margin-top: 16ch;
+    max-width: 640vh;
+    margin-left: 20vh;
+    padding: 32px, 40px, 51px, 80px; */
     
 }
 
-.container-content span{
-    height: 300px; 
-    border-left: 1px solid black; 
- 
+#header-text h3{
+    font-family: "Jost", sans-serif;
+    font-size: 2ch;
+    font-weight: normal;
+    color:#9B9B98 ;
+}
+
+
+#header-text img{
+
+    width: 20px;
+    height: 20px;
+}
+
+.card-data{
+    display: flex;
+    border: 0.4px solid rgba(0, 0, 0, 0.027);
+    box-shadow:0px 12px 22px 1px #33333346;
+    width: 690px;
+    height: 44px; 
+    box-sizing: border-box;
+    flex: 0 0 30%; 
+    padding: 20px;
+}
+
+.card-type h1{
+    display: flex;
+
+    font-family: "Jost", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
 }

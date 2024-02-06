@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LigaMagic</title>
     <link rel="stylesheet" href="./assets/css/card-display.css ">
-    <!-- <link rel="stylesheet" href="./assets/css/content.css "> -->
+    <link rel="stylesheet" href="./assets/css/content.css ">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js""></script>
     <script src="https://kit.fontawesome.com/f23a2c4784.js" crossorigin="anonymous"></script>
 
@@ -14,33 +14,44 @@
 <body onload="init()">
 
     <!-- ----------------DISPLAY---------------- -->
+    <div class="container">
+        <section class="container-display" id="section">
+            <div id="card-display"></div>
+            
+            <br> <hr> <br>
 
-    <section class="container-display">
-
-        <div id="card-display"></div>
-        
-        <br> <hr> <br>
-
-        <div id="card-selector">
-            <i class="fa fa-caret-left" id="arrow_L-click" ></i>
-                <p id="card-index"></p>
-            <i class="fa fa-caret-right" id="arrow_R-click" ></i>
-        </div>
-    
-    </section>
-
-    <span class="barra-vertical"><hr></span>
+            <div id="card-selector">
+                <i class="fa fa-caret-left" id="arrow_L-click" ></i>
+                    <p id="card-index"></p>
+                <i class="fa fa-caret-right" id="arrow_R-click" ></i>
+            </div>
+        </section>
 
     <!-- ----------------CONTEUDO---------------- -->
-    
-    <section class="container-content">
-        
-        <div id="description">lorem</div>
-        
-    
-    </section>
+
+        <section class="container-content" id="section">
+            <div id="header-text">
+                <h3>Home | Magic: The Gathering | Busca | Bazar - Lista de Desejos</h3>
+
+                <br>
+
+                <span class="card-data">
+                    <img src="./icons/C.png"></img>
+                    <p id="num">#045</p>
+                    <h5>Dominaria Remastered</h5>
+                </span>
+
+                <br>
+
+                <h1 class="card-type">Contramágica</h1>
+                
+            </div>
+        </section>
+    </div>      
 
 
-    <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/card_info.js"></script>
 </body>
 </html>
