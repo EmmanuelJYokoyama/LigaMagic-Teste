@@ -21,11 +21,17 @@
             <br> <hr> <br>
 
             <div id="card-selector">
-                <i class="fa fa-caret-left" id="arrow_L-click" ></i>
-                    <p id="card-index"></p>
-                <i class="fa fa-caret-right" id="arrow_R-click" ></i>
+                
+                <div class="select-container">
+                    <i class="fa fa-caret-left" id="arrow_L-click" ></i>
+                        <span id="card-index"></span>
+                    <i class="fa fa-caret-right" id="arrow_R-click" ></i>
+                </div>
+               
             </div>
         </section>
+
+
 
     <!-- ----------------CONTEUDO---------------- -->
 
@@ -35,17 +41,103 @@
 
                 <br>
 
-                <span class="card-data">
+                <div class="card-data">
                     <img src="./icons/C.png"></img>
-                    <p id="num">#045</p>
-                    <h5>Dominaria Remastered</h5>
-                </span>
+                    <div class="text-info">
+                        <p><span class="bold">#045</span> Dominaria Remastered</p>
+                        
+                    </div>
+                    <p class="sigla">| DMR <i class="fa-solid fa-caret-down"></i></p>
+
+                </div>
 
                 <br>
 
-                <h1 class="card-type">Contramágica</h1>
-                
+                <div class="type">
+                    <h1 class="card-type">Contramágica <i class="fa-regular fa-heart"></i></img></h1>
+                    <h2 class="subtext">Counterspell</h2>
+                    
+                </div>
+                    
             </div>
+
+            <div class="lista-compras">
+                <div class="text-compras">
+                    <h1>Lista de Compras</h1>
+                    <h2>Add a carta aqui e deixe que a Liga calcule o melhor preço para você!</h2>
+                </div>
+
+                <div class="lista-container">
+                    <div class="lista-valor">
+                        <p class="add-val">+</p>
+                            <div class="valor" id="counter">1</div>
+                        <p class="remove-val">-</p>
+                    </div>
+                    <i class="fa-solid fa-sliders"></i>
+
+                    
+                </div>
+                <div class="add-lista">
+                    <i class="far fa-plus-square"></i>
+                    <h1 class="list-adding"> ADICIONAR A LISTA</h1>
+                </div>
+            </div>
+
+            <!-- -------BOTTOM INFO------- -->
+            <div class="detalhe-head">
+                <h2>Detalhes da carta</h2>
+                <h3>Ver Tudo</h3>
+            </div>
+            
+            <div class="info">
+                <div class="detalhe-container">
+                    <div class="card-detalhe">
+                        <span class="info-detalhe">Cor</span>
+                        <span class="card-color">Azul</span>
+                    </div>
+                </div>
+
+
+                <div class="detalhe-container">
+                    <div class="card-detalhe">
+                        <span class="info-detalhe">Custo de Mana</span>
+                        <span class="mana-custo"><img src="./icons/mana.png"><img src="./icons/mana.png"></span>
+                    </div>
+                </div>
+
+                
+                <div class="detalhe-container">
+                    <div class="card-detalhe">
+                        <span class="info-detalhe">Tipo</span>
+                        <span class="tipo-carta">Mágica Instantânea</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detalhe-market">
+                <h2>Preço Médio no Marketplace</h2>
+                <h3>Ver Tudo</h3>
+            </div>
+
+            <div class="detalhe-container">
+                <div class="card-market">
+                    <img src="./icons/square-n.png" id="icon-N">
+                    <span class="extra">Normal</span>
+
+                    <div class="card-valor">
+                        <img src="./icons/valor-menor.png" id="icone-valor">
+                        <span class="price">R$ 6,28</span>
+
+                        <img src="./icons/valor-medio.png" id="icone-valor">
+                        <span class="price">R$ 9,39</span>
+
+                        <img src="./icons/valor-maior.png" id="icone-valor">
+                        <span class="price">R$ 14,00</span>
+                    </div>
+
+                </div>
+            </div>
+
         </section>
     </div>      
 

@@ -6,6 +6,7 @@
     max-width: 850vh;
     margin-right: 90ch ;
     padding: 32px, 95px, 40px, 64px;
+    border-left: 1px solid rgba(0, 0, 0, 0.185);
     /* margin-top: 16ch;
     max-width: 640vh;
     margin-left: 20vh;
@@ -13,9 +14,14 @@
     
 }
 
+:root{
+    --color-text: #727270
+}
+
 #header-text h3{
+    margin-right: 31ch;
     font-family: "Jost", sans-serif;
-    font-size: 2ch;
+    font-size: 14px;
     font-weight: normal;
     color:#9B9B98 ;
 }
@@ -27,6 +33,10 @@
     height: 20px;
 }
 
+
+/* --------- TEXTO CABECALHO --------- */
+
+
 .card-data{
     display: flex;
     border: 0.4px solid rgba(0, 0, 0, 0.027);
@@ -34,15 +44,404 @@
     width: 690px;
     height: 44px; 
     box-sizing: border-box;
-    flex: 0 0 30%; 
-    padding: 20px;
+    flex: 0 0 32%; 
+    margin-left: 5ch;
+    
+}
+.type{
+    margin-left: -50ch;
+    overflow: hidden
+ 
 }
 
-.card-type h1{
-    display: flex;
+.type i{
+    float: right;
+}
 
+
+.card-type h1{
+    /* display: flex; */
     font-family: "Jost", sans-serif;
     font-size: 24px;
     font-weight: bold;
+    
+}
 
+
+.subtext{
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: -10ch;
+    margin-top: -2ch;
+}
+
+.card-data img{
+   margin: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.text-info{
+    margin: 0px;
+    margin-top: -7px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+
+.sigla{
+    font-style: "Jost";
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 5ch;
+
+    i{
+        margin-left: 2ch;
+    }
+}
+
+
+/* -----------LISTA DE COMPRA ------------- */
+
+
+.lista-compras{
+    background: #ECECEA;
+    /* display: flex; */
+    border: 0.4px solid rgba(0, 0, 0, 0.027);
+    box-shadow:0px 12px 22px 1px #3333331e;
+    width: 690px;
+    height: 140px; 
+    box-sizing: border-box;
+    flex: 0 0 32%; 
+    margin-left: 5ch;
+    
+
+}
+
+.text-compras{
+    h1{
+        font-style: "Jost";
+        font-weight: 600;
+        font-size: 24px;
+        margin-top: 14px;
+        margin-left: -32ch; 
+        color: #474745;
+        
+    }
+
+    h2{
+        font-style: "Jost";
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: -14px;
+        margin-left: -12ch; 
+        color: #474745;
+    }
+}
+
+
+.lista-container{
+    display: flex;
+    border: 1px solid #cecece;
+    background-color:#F4F4F2 ;
+    width: 102px;
+    height: 40px; 
+    box-sizing: border-box;
+    flex: 0 0 32%; 
+    margin-left: 3ch;
+
+}
+
+.lista-valor{
+    display: flex;
+}
+
+.valor{
+    font-style: "Jost";
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 2.5ch;
+    margin-top: 8px;
+    color: #474745;
+}
+
+.add-val{
+    cursor: pointer;
+    border: 1px solid #cecece;
+    height: 16px;
+    font-size: 10px;
+    font-weight: 600;
+    width: 16px;
+    margin-left: 1ch;
+    -webkit-user-select: none;
+}
+
+.remove-val{
+    cursor: pointer;
+    border: 1px solid #cecece;
+    height: 16px;
+    font-size: 10px;
+    font-weight: 600;
+    width: 16px;
+    margin-left: 3.5ch;
+    -webkit-user-select: none;
+}
+
+.fa-sliders{
+    border: 1px solid #cecece;
+    background-color:#ECECEA ;
+    width: 40px;
+    height: 40px; 
+    padding-top: 8px;
+    box-sizing: border-box;
+    flex: 0 0 30%; 
+    margin-left: 2ch;
+
+}
+
+.add-lista{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #cecece;
+    background-color:#127119 ;
+    width: 208px;
+    height: 40px; 
+    padding-top: 8px;
+    box-sizing: border-box;
+    flex: 0 0 30%; 
+    margin-top: -40px;
+    margin-left: 21ch;
+
+}
+
+
+.add-lista i{
+    margin-top: 3px;
+    margin-left: 2ch;
+}
+
+.add-lista h1{
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 10px;
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: #DAEDCE;
+    -webkit-user-select: none;
+
+}
+
+/* ----------TEXTO FINAL ---------- */
+
+.info div{
+    margin-top: 8px;
+}
+
+
+.detalhe-container{
+    border: 0.4px solid #ECECEA;
+    background-color:#ECECEA ;
+    width: 689px;
+    height: 34px; 
+    box-sizing: border-box;
+    flex: 0 0 32%; 
+    margin-top: 32px;
+    margin-left: 5ch;
+    overflow: hidden; /* Para evitar que o conteúdo ultrapasse a caixa */
+    
+}
+.card-color {
+    
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;  
+    padding-right: 3%;
+    padding-top: -2px;
+    letter-spacing: -0.5px;
+    text-align: right;
+    color: #0085FF;
+    float: right;
+}
+
+.info-detalhe {
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 2%;
+    margin-top: -2px;
+    color: var(--color-text);
+    float: left;
+}
+
+/*========================== */
+
+
+.detalhe-head{
+
+    width: 670px;
+    height: 32px; 
+    box-sizing: border-box;
+    flex: 0 0 32%; 
+    margin-top: 32px;
+    margin-bottom: 10px;
+    margin-left: 5ch;
+    overflow: hidden;
+
+}
+
+.detalhe-head h2{
+ 
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding-left: 3%;
+    letter-spacing: -0.5px;
+    float: left;
+
+    
+}
+
+.detalhe-head h3{
+
+    font-family: "Jost";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    padding-right: 3%;
+    color: #FF5921;
+    float: right;
+
+}
+
+/* ================================ */
+
+.card-detalhe img{
+    width: 20px;
+    height: 20px;
+    margin-right: 3%;
+    margin-top: -3px;
+    float: right;
+
+}
+
+
+.tipo-carta{
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    padding-right: 3%;
+    margin-top: -3px;;
+    float: right;
+}
+
+
+/* ====================== */
+
+.detalhe-market{
+
+    width: 670px;
+    height: 32px; 
+    box-sizing: border-box;
+    flex: 0 0 32%; 
+    margin-top: 32px;
+    margin-bottom: 10px;
+    margin-left: 5ch;
+    overflow: hidden;
+
+    h2{
+ 
+        font-family: "Jost";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        padding-left: 3%;
+        letter-spacing: -0.5px;
+        float: left;
+    }
+
+    h3{
+
+        font-family: "Jost";
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        padding-right: 3%;
+        color: #FF5921;
+        float: right;
+    }
+}
+
+/* ================================= */
+:root{
+    --margin-inside: 5px;
+}
+
+.card-market{
+    overflow: hidden;
+}
+
+.card-valor{
+
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    margin-right: 3ch;
+    float: right;
+
+}
+
+
+.extra{
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 2%;
+    margin-top: 3px;
+    color: var(--color-text);
+    float: left;
+}
+
+#icon-N{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 2%;
+    float: left;
+    
+}
+
+#icone-valor{
+    margin-top: var(--margin-inside);
+    margin-right: 0;
+    margin-left: 20px;
+    width: 4px;
+    height: 20px;
+}
+
+.price{
+    color: rgba(114, 114, 112, 1);
+}
+
+@media screen {
+    
 }

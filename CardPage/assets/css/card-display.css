@@ -42,46 +42,59 @@ h1{
 
 /* ---------------CARD DISPLAY------------- */
 
+#card-display img{
+    width: 60%;
+    height: 60%;
+}
+
+
+
 .container-display{
-    margin-top: 20ch;
+    margin-top: 17ch;
     max-width: 640vh;
     margin-left: 20vh;
     padding: 32px, 40px, 51px, 80px;
-    border-right: 1px solid rgba(0, 0, 0, 0.048);
+   
+}
+
+#arrow_L-click{
+    margin-left: 0;
 
 
+}
+#arrow_R-click{
+    margin-left: 0;
+    
 }
 
 .container-display hr{
     width: 328px;
 }
 
-.container-display p{
-
-    display: flex;
-    justify-content: center;    
-    position: relative;
-    
-}
 
 
 #card-selector{
     display: flex;
     align-items: center;
+    overflow: hidden;
+
     img{
         width: 15%;
         height: 15%;
         gap: 10px;
+        
+        
     }
     p{
-        gap: 16px
+        gap: 16px;
+        border: 1px solid black;
     }
 }
 
 #card-index{
     margin-left: 0px;
     margin: 0
-    
+
 }
 
 /* ---------------CARD EFFECT------------- */
@@ -108,5 +121,10 @@ h1{
     zoom: 1.2;
 
 }
+
+.select-container{
+    overflow: hidden;
+}
+
 
 
